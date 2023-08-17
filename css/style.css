@@ -214,3 +214,16 @@ image {
     z-index: -1;
 }
 
+.vbox-close {
+    color: #fff;
+    background: transparent;
+    font-size: 40px;
+    right: 12%;
+}
+
+.image-1 {    
+    width: 50%;
+    height: auto;
+}
+
+
