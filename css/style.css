@@ -136,6 +136,7 @@ image {
     /* top: 20px; */
     height: 800px;
     background-position: bottom center;
+    height: auto;
 }
 
 .header-hero-content {
