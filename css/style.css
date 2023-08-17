@@ -31,10 +31,14 @@ a {
     transition: all 0.4s ease;
 }
 
-h1 {
+h1, h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: #38424d;
+}
+
+h3 {
+    font-size: 28px;
 }
 
 p {
@@ -231,7 +235,29 @@ image {
 .feature-section .single-feature {
     padding: 30px;
     text-align: center;
-    box-shadow: 0 15px 17px 0 rgb(154 154 154 / 16%);
+    box-shadow: 0 15px 17px 0 rgb(154 154 154 / 16%); 
 }
+
+.feature-section .single-feature .icon {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    margin: 0 auto 30px;
+    background-color: #2D0F44;
+    color: #fff;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+}
+
+
+.feature-section .single-feature .content {
+    font-weight: 600;
+    margin-top: 25px;
+}
+
 
 
