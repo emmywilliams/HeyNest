@@ -226,4 +226,11 @@ image {
     height: auto;
 }
 
+/* features */
+.feature-section .single-feature {
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 15px 17px 0 rgb(154 154 154 / 16%);
+}
+
 
