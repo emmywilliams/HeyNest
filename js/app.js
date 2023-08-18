@@ -22,27 +22,27 @@ function closeNavbar() {
   }
 }
 
-$(document).ready(function () {
-  // Hero slider
-  $("#testimonial-active").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    items: 1,
-    smartSpeed: 1000,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    responsive: {
-      0: {
-        nav: false,
-      },
-      768: {
-        nav: true,
-      },
-    },
-  });
-});
+// $(document).ready(function () {
+//   // Hero slider
+//   $("#").owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     dots: false,
+//     items: 1,
+//     smartSpeed: 1000,
+//     autoplay: true,
+//     autoplayTimeout: 5000,
+//     responsive: {
+//       0: {
+//         nav: false,
+//       },
+//       768: {
+//         nav: true,
+//       },
+//     },
+//   });
+// });
 
 // phone initialize library
 var input = document.querySelector("#phone");
