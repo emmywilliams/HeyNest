@@ -31,13 +31,17 @@ a {
     transition: all 0.4s ease;
 }
 
-h1, h3 {
+h1, h3, h4 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: #38424d;
 }
 
 h3 {
+    font-size: 28px;
+}
+
+h4 {
     font-size: 28px;
 }
 
@@ -100,7 +104,7 @@ span {
 /* navbar */
 .navbar {
     padding: 10px 60px;
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08); */
 }
 
 /* Make the navbar sticky */
@@ -363,10 +367,72 @@ image {
     background-color: #2D0F44;
 }
 
+.testimonial-section .testimonial-active-wrapper {
+    justify-content: center;
+}
+
+.testimonial-section .testimonial-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
 .testimonial-section .single-testimonial {
     position: relative;
     padding: 45px 50px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: -1rem 1rem rgba(0, 0, 0, 0.1),
+    z-index: 9;
+    max-width: 100%;
+}
+
+.testimonial-section .single-testimonial::before {
+    top: -20px;
+    right: -20px;
+    opacity: .26;
+    z-index: -1;
+}
+
+.testimonial-section .single-testimonial::after {
+    top: -40px;
+    right: -40px;
+    opacity: .13;
+    z-index: -2;
+}
+
+.testimonial-section .single-testimonial::before,
+.testimonial-section .single-testimonial::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: inherit;
+}
+
+.testimonial-section .single-testimonial .info .image-2 {
+    width: 100%;
+    max-width: 65px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.testimonial-section .single-testimonial .info h4 {
+    margin-bottom: 8px;
+}
+
+.testimonial-section .single-testimonial .info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.testimonial-section .single-testimonial .quote {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 80px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.09);
+    /* color: rgba(255, 203, 87, 0.5); */
 }
