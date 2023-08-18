@@ -103,6 +103,20 @@ span {
     box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* Make the navbar sticky */
+.header-area {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.body-padding {
+    padding-top: 100px;
+}
+
+
 image {
     display: inline-block;
 }
@@ -253,11 +267,106 @@ image {
     border-radius: 7px;
 }
 
+.feature-section .single-feature .color-2 {
+    background-color: #FFCB57;
+}
+
+.feature-section .single-feature .color-3 {
+    background-color: #FFC8A3 ;
+}
+
+.feature-section .single-feature .icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    top: -8px;
+    right: -8px;
+    z-index: -1;
+    opacity: .2;
+    transition: all .3 ease-out 0s;
+}
+
+.feature-section .single-feature:hover .icon::after {
+    top: 8px;
+    right: 8px;
+    transform: scale(1.1);
+}
 
 .feature-section .single-feature .content {
     font-weight: 600;
     margin-top: 25px;
 }
 
+/* about */
+.about-area {
+    overflow: hidden;
+}
 
+.about-image {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+.about-image .about-shape {
+    position: relative;
+    width: 394px;
+    height: 394px;
+    background-color: #FFCB57;
+    border-radius: 50%;
+}
+
+.about-image .about-shape::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid #FFCB57;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform:  scale(1.1) rotate(25deg);
+} 
+
+.about-image .app {
+    max-width: 280px;
+    position: absolute;
+    top:100px;
+    left: 95px;
+    transform: rotate(-25deg) translateY(-15%);
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.about-content .main-btn {
+    margin-top: 40px;
+}
+
+/* Testimonial */
+.testimonial-section {
+    padding: 100px 0;
+    background-color: #2D0F44;
+}
+
+.testimonial-section .single-testimonial {
+    position: relative;
+    padding: 45px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -1rem 1rem rgba(0, 0, 0, 0.1),
+}
