@@ -61,11 +61,11 @@ span {
 /* Download button */
 .main-btn {
     display: inline-block;
-    padding: 0 25px;
+    padding: 0 20px;
     font-size: 16px;
     font-weight: 500;
     text-align: center;  
-    line-height: 55px;
+    line-height: 50px;
     border: 2px solid #2D0F44;
     border-radius: 8px;
     background-color: #2D0F44;
@@ -77,6 +77,30 @@ span {
 .main-btn:hover {
     background-color: #ffffff;
     color: #2D0F44;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(45, 15, 68, 0.8);
+}
+
+/* contact button */
+.btn-brand {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;  
+    line-height: 45px;
+    border: 2px solid #2D0F44;
+    border-radius: 8px;
+    background-color: #2D0F44;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;   
+}
+
+.btn-brand:hover {
+    background-color:  #452964;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(45, 15, 68, 0.8);
     transform: scale(1.1);
 }
 
@@ -435,4 +459,31 @@ image {
     line-height: 1;
     color: rgba(0, 0, 0, 0.09);
     /* color: rgba(255, 203, 87, 0.5); */
+}
+
+/* Contact form */
+.form-control:focus {
+    box-shadow: none;
+    border-color: #8F3694;
+}
+
+.form-label{
+    font-weight: 300;
+    color: #092032;
+}
+
+.image-section {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.custom-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+    padding-right: 3rem; 
+}
+
+form h1 {
+    color:#2D0F44;
 }
